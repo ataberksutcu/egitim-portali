@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title -->
+        <title>Eğitim Portalı</title>
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        
+        <!-- Styles -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+        <link href="assets/plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/slidepushmenus/css/component.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/css/jquery.datatables.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/datatables/css/jquery.datatables_themeroller.css" rel="stylesheet" type="text/css"/>		
+        	
+        <!-- Theme Styles -->
+        <link href="assets/css/modern.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body class="page-header-fixed">
+        <div class="overlay"></div>
+       
+        <form class="search-form" action="#" method="GET">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control search-input" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i class="fa fa-times"></i></button>
+                </span>
+            </div><!-- Input Group -->
+        </form><!-- Search Form -->
+        <main class="page-content content-wrap">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="sidebar-pusher">
+                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="logo-box">
+                        <a href="index.html" class="logo-text"><span>Eğitim Portalı</span></a>
+                    </div><!-- Logo Box -->
+                    <div class="search-button">
+                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="topmenu-outer">
+                        <div class="top-menu">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>	
+                                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                                        <span class="user-name">Ataberk<i class="fa fa-angle-down"></i></span>
+                                        <img class="img-circle avatar" src="assets/images/avatar1.png" width="40" height="40" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-list" role="menu">
+                                        <li role="presentation"><a href="profile.html"><i class="fa fa-user"></i>Profil</a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li role="presentation"><a href="login.html"><i class="fa fa-sign-out m-r-xs"></i>Çıkış Yap</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="log-out waves-effect waves-button waves-classic">
+                                        <span><i class="fa fa-sign-out m-r-xs"></i>Çıkış Yap</span>
+                                    </a>
+                                </li>
+                            </ul><!-- Nav -->
+                        </div><!-- Top Menu -->
+                    </div>
+                </div>
+            </div><!-- Navbar -->
+            <div class="page-sidebar sidebar">
+                <div class="page-sidebar-inner slimscroll">
+                    <div class="sidebar-header">
+                        <div class="sidebar-profile">
+                            <a href="javascript:void(0);" id="profile-menu-link">
+                                <div class="sidebar-profile-image">
+                                    <img src="assets/images/profile-menu-image.png" class="img-circle img-responsive" alt="">
+                                </div>
+                                <div class="sidebar-profile-details">
+                                    <span>Ataberk Sütçü<br><small>Admin</small></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="menu accordion-menu">
+                        <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Kontrol Paneli</p></a></li>
+                        <li class="droplink active open"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Kullanıcılar</p><span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li class="active"><a href="admin.html">Adminler</a></li>
+                                <li><a href="ogretmen.html">Öğretmenler</a></li>
+                                <li><a href="ogrenci.html">Öğrenciler</a></li>
+                            </ul>
+                        </li>
+                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-bookmark"></span><p>Notlar</p><span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="not-gir.html">Notları Girin</a></li>
+                                <li><a href="notlar.html">Notları Görüntüle</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- Page Sidebar Inner -->
+            </div><!-- Page Sidebar -->
+            <div class="page-inner">
+                <div class="page-title">
+                    <h3>Dashboard</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="#">Kullanıcılar</a></li>
+                            <li class="active">Adminler</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="main-wrapper">
+
+                        <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#adminler" role="tab" data-toggle="tab">Adminler</a></li>
+                                    <li role="presentation"><a href="#Ekle" role="tab" data-toggle="tab">Yeni</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="adminler">
+                                        
+                                            <table id="example" class="display table" style="width: 100%; cellspacing: 0;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ad</th>
+                                                            <th>Kullanıcı Adı</th>
+                                                            <th>Eposta</th>
+                                                            <th>Hesap Tipi</th>
+                                                            <th>Ayarlar</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Ad</th>
+                                                            <th>Kullanıcı Adı</th>
+                                                            <th>Eposta</th>
+                                                            <th>Hesap Tipi</th>
+                                                            <th>Ayarlar</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ataberk Sütçü</td>
+                                                            <td>ataberksutcu</td>
+                                                            <td>atabersutcu@egitimportali.com</td>
+                                                            <td>Admin</td>
+                                                            <td><button class="btn btn-primary btn-rounded btn-sm"><i class="fa fa-user"></i> Profile</button> <button class="btn btn-danger btn-sm btn-rounded"><i class="fa fa-trash"></i> Sil</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ataberk Sütçü</td>
+                                                            <td>ataberksutcu</td>
+                                                            <td>atabersutcu@egitimportali.com</td>
+                                                            <td>Admin</td>
+                                                            <td><button class="btn btn-primary btn-rounded btn-sm"><i class="fa fa-user"></i> Profile</button> <button class="btn btn-danger btn-sm btn-rounded"><i class="fa fa-trash"></i> Sil</button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>  
+                                           
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="Ekle">
+                                            <div class="panel-heading clearfix">
+                                                    <h4 class="panel-title">Yeni Ekle</h4>
+                                            </div> 
+
+                                            <br>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Ad</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-user"></i> </span>
+                                                        <input type="text" class="form-control" placeholder="Ad" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Kullanıcı Adı</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1">@ </span>
+                                                        <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Eposta</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-envelope-o"></i> </span>
+                                                        <input type="text" class="form-control" placeholder="Eposta" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Telefon</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-phone"></i> </span>
+                                                        <input type="text" class="form-control" placeholder="Telefon" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Şifre</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-lock"></i> </span>
+                                                        <input type="password" class="form-control" placeholder="Şifre" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Hesap Tipi</label>
+                                                <div class="col-sm-10">
+                                                    
+                                                    <div class="input-group m-b-sm">
+                                                        <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-user"></i> </span>
+                                                        <select class="form-control">
+                                                            <option>Admin</option>
+                                                            <option>Super Admin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-buttons-w">
+                                                <button class="btn btn-primary btn-rounded" type="submit">Kaydet</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div><!-- Main Wrapper -->
+                <div class="page-footer">
+                    <p class="no-s">2017 &copy; Öğrenci Portalı.</p>
+                </div>
+            </div><!-- Page Inner -->
+        </main><!-- Page Content -->
+       
+	
+
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="assets/plugins/jquery-mockjax-master/jquery.mockjax.js"></script>
+        <script src="assets/plugins/moment/moment.js"></script>
+        <script src="assets/plugins/datatables/js/jquery.datatables.min.js"></script>
+        <script src="assets/plugins/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="assets/js/pages/table-data.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/main.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/jquery-counterup/jquery.counterup.min.js"></script>
+        <script src="assets/plugins/toastr/toastr.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/curvedlines/curvedLines.js"></script>
+        <script src="assets/plugins/metrojs/MetroJs.min.js"></script>
+        <script src="assets/js/modern.min.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+
+        
+        
+        
+    </body>
+</html>
